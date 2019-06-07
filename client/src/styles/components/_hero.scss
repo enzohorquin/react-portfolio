@@ -20,7 +20,10 @@ $left-to-right-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0
     background: $left-to-right-gradient, url("./images/backgrounds/projects-bg.jpg") no-repeat 0% 27%;
     background-size: cover;
 }
-
+.jaiio-bg {
+    background: $left-to-right-gradient, url("./images/backgrounds/jaiio-bg.jpg") no-repeat 0% 25%;
+    background-size: cover;
+}
 
 
 .contact-bg {

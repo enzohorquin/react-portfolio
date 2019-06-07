@@ -32,9 +32,13 @@ class DesktopNav extends Component {
             <NavLink className="nav__list__section" to="/projects" activeClassName="desktop-nav-active">
               <li className="nav__list__section__text">Projects</li>
             </NavLink>
+            <NavLink className="nav__list__section" to="/education" activeClassName="desktop-nav-active">
+              <li className="nav__list__section__text">Education</li>
+            </NavLink>
             <NavLink className="nav__list__section nav__list__section--cta" to="/contact" activeClassName="desktop-nav-active">
               <li className="nav__list__section__text">Contact</li>
             </NavLink>
+            
           </span>
         </div>
       </ul>

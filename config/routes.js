@@ -71,6 +71,17 @@ module.exports = [
             params: {},
             body: {}
         }
+    },
+    {
+        path: '/education/projects-two-col-data',
+        entity: 'education',
+        method: 'get',
+        type: 'get',
+        auth: false,
+        input: {
+            params: {},
+            body: {}
+        }
     }
 
  ];

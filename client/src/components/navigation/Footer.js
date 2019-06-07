@@ -19,7 +19,9 @@ const Footer = () => (
             <p className="footer__list__pipe">|</p>
             <li className="footer__list__item"><NavLink to="projects" className="footer__list__item__link">Projects</NavLink></li>
             <p className="footer__list__pipe">|</p>
-            <li className="footer__list__item"><NavLink to="contact" className="footer__list__item__link">Contact</NavLink></li>        </ul>
+            <li className="footer__list__item"><NavLink to="contact" className="footer__list__item__link">Contact</NavLink></li>      
+            <p className="footer__list__pipe">|</p>
+            <li className="footer__list__item"><NavLink to="education" className="footer__list__item__link">Education</NavLink></li>    </ul>
     </div>
 );
 

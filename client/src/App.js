@@ -4,6 +4,7 @@ import Nav from './components/navigation/Nav';
 import Home from './components/pages/Home';
 import Skills from './components/pages/Skills';
 import WorkHistory from './components/pages/WorkHistory';
+import Education from './components/pages/Education';
 import Projects from './components/pages/Projects';
 import ErrorPage from './components/pages/ErrorPage';
 import Contact from './components/pages/Contact';
@@ -34,7 +35,7 @@ class App extends Component {
                   <Route exact path='/skills' component={Skills} />
                   <Route exact path='/work-history' component={WorkHistory} />
                   <Route exact path='/projects' component={Projects} />
-                  
+                  <Route exact path='/education' component={Education} />
                   <Route exact path='/contact' render={(props) => (
                     <Contact {...props} onSubmit={fields => this.onSubmit(fields)}/>
                   )}  />
