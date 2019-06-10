@@ -15,7 +15,7 @@ module.exports = [{
     header: `Algorithms`,
     subHeader: `School Final Project for Algorithms Analysis and Design II`,
     para: [`C++`],
-    list: [ `In this project I've developed graph's algorithm like DFS, BFS, Prim, Kruskal and Dijkstra. Problems such as N-Queens were also solved, with the technique of exhaustive resolution of Backtracking.`],
+    list: [ `In this project I have developed graph's algorithm like DFS, BFS, Prim, Kruskal and Dijkstra. Problems such as N-Queens were also solved, with the technique of exhaustive resolution of Backtracking.`],
     img: `images/graphs.png`,
     pullImg: 'img-left',
     altText: `Graph`,
