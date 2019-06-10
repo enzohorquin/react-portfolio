@@ -147,7 +147,7 @@ export default class Contact extends React.Component {
                     header="Let's Get In Touch"
                     subHeader="Tell me about yourself and what I can do for you."
                     bg="contact-bg"
-                    style={{ marginLeft:'400px'}}
+                    style={{ marginLeft:'150px'}}
                 />
                 <div className="full-width-row cta-form--bg">
                     <div className="row-container">

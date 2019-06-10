@@ -20,7 +20,7 @@ class ThreeColWrap extends React.Component {
                                         {
                                             RegExp('.(gif|jpg|jpeg|tiff|png)$').test(skill.icon) === true ?
                                             <img
-                                                className="three-col-wrap__item__inner__img"
+                                                className="two-col-container__img-container__img"
                                                 src={skill.icon}
                                                 alt={`${skill.text}`}
                                             /> : 
