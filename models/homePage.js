@@ -1,6 +1,6 @@
 module.exports = [
     {
-        header: `Where I've studied`,
+        header: `Where I have studied`,
         para: [`I'm a Computer Science Engineer graduated from UNICEN in Tandil, Buenos Aires, Argentina.`],
         img: `images/unicen.jpg`,
         pullImg: `img-left`,
@@ -10,7 +10,7 @@ module.exports = [
         link: `http://exa.unicen.edu.ar/`
     },
     {
-    header: `Where I've Worked`,
+    header: `Where I have Worked`,
     para: [`I'm currently working for Avalith as a Full Stack Developer.`],
     img: `images/wireframe.jpg`,
     pullImg: 'img-right',
@@ -21,7 +21,7 @@ module.exports = [
 
 },
 {
-    header: `Things I’ve Built`,
+    header: `Things I have Built`,
     para: [`Here you’ll find real world examples of web app development.`],
     img: `images/RSI_index.jpg`,
     pullImg: `img-left`,
