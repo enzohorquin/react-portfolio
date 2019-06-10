@@ -35,7 +35,7 @@ exports.send = (req, res) => {
         } */);
 
         const msg = {
-            to: config.nodemailer.auth.user,
+            to: config.nodemailer.auth.user || process.env.MAIL_USER,
             from: req.body.email,
             emailAddress: req.body.email,
             subject: req.body.subject,

@@ -15,8 +15,8 @@ const config = require('../config/config');
  */
 exports.send = (params, cb) => {
     const oauth2Client = new OAuth2(
-        config.nodemailer.auth.clientId, // ClientID
-        config.nodemailer.auth.clientSecret, // Client Secret
+        config.nodemailer.auth.clientId || process.env.CLIENT_ID, // ClientID
+        config.nodemailer.auth.clientSecret || process.env.CLIENT_SECRET, // Client Secret
         "https://developers.google.com/oauthplayground" // Redirect URL
     );
     const GMAIL_SCOPES = [
@@ -32,7 +32,7 @@ exports.send = (params, cb) => {
       console.info(`authUrl: ${url}`);
     
       oauth2Client.setCredentials({
-        refresh_token: config.nodemailer.auth.refreshToken
+        refresh_token: config.nodemailer.auth.refreshToken || process.env.REFRESH_TOKEN
     });
     const accessToken = async () => {
         const token = await oauth2Client.refreshAccessToken();
@@ -54,10 +54,10 @@ exports.send = (params, cb) => {
             },
         auth: {
              type: "OAuth2",
-             user: config.nodemailer.auth.user, 
-             clientId: config.nodemailer.auth.clientId,
-             clientSecret: config.nodemailer.auth.clientSecret,
-             refreshToken: config.nodemailer.auth.refreshToken,
+             user: config.nodemailer.auth.user || process.env.MAIL_USER, 
+             clientId: config.nodemailer.auth.clientId || process.env.CLIENT_ID,
+             clientSecret: config.nodemailer.auth.clientSecret || process.env.CLIENT_SECRET,
+             refreshToken: config.nodemailer.auth.refreshToken || process.env.REFRESH_TOKEN,
              accessToken: accessToken
         }
    });
