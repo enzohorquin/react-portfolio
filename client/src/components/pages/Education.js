@@ -26,7 +26,7 @@ export default class Education extends React.Component {
                     header= "Computer Science Engineer"
                     subHeader= "at UNCPBA. Because learning never stops"
                     bg="jaiio-bg"
-                    style={{ marginLeft:'150px'}}
+                    style={{ marginLeft:'50px'}}
                 />
                 {(this.state.TwoColdata || []).map((data, i) => {
                     return (
