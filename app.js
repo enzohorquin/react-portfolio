@@ -28,11 +28,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 app.use('/', indexRouter);
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
-
 if (process.env.NODE_ENV === 'production') {
   //Express will serve up production assets
   app.use(express.static('client/build'));
@@ -44,6 +39,12 @@ if (process.env.NODE_ENV === 'production') {
       res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
+});
+
+
 
 app.listen(5000, function () {
   console.log("Express server listening on port 5000");
