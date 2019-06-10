@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { check,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 const nodemailer = require('nodemailer');
-mongoose.connect('mongodb://localhost:27017/portfolio', {useNewUrlParser: true});
+mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio', {useNewUrlParser: true});
 require('../../models/email');
 const Email = mongoose.model('emails');
 const emailService = require('../../service/email');
