@@ -1,4 +1,4 @@
 /node_modules
 package-lock.json
-config/config
+config/config.js
 config/client_secret.json
