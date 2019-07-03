@@ -10,4 +10,15 @@ module.exports = [
     internalLink: false,
     link: `https://github.com/enzohorquin/react-portfolio`
 
+},
+{
+    header: `Front-End Coding Challenge React.js `,
+    para: [`The purpose of this project was to learn the basic principles of web design and web development. The result was a cleanly designed, to begin with my career as a Full Stack Developer and a Front-End Developer. `],
+    img: `images/challenge.png`,
+    pullImg: 'img-left',
+    altText: `React Project`,
+    btnPara: `See Front-End Challenge Code`,
+    internalLink: false,
+    link: `https://github.com/enzohorquin/Frontend-Challenge`
+
 }]

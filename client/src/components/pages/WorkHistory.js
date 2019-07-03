@@ -49,7 +49,7 @@ export default class WorkHistory extends React.Component {
                     )
                 })}
                 <CallToAction
-                    ctaHeader="What Can I BuildFor You?"
+                    ctaHeader="What Can I Build For You?"
                     ctaPara="Need a new website? How about sprucing up your current site? Need to get the word out on your amazing product? I can help you out."
                     ctaBtnText="Chat With Me"
                 />
