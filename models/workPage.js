@@ -10,4 +10,16 @@ module.exports = [{
     btnPara: `Learn about Avalith`,
     internalLink: false,
     link: `http://avalith.net/`,
+}, {
+    header: `Intive-FDV`,
+    subHeader: `Front End Reac Developer July 2019 – present`,
+    para: [`Intive-FDV hired me to become a Front End Developer in UI Intelligize Team.`],
+    list: [ `Create Web Application's using React.JS, Redux-Sagas, HTML5, CSS3, Sass`   
+    ],
+    img: `images/rsi_blog3.jpg`,
+    pullImg: 'img-left',
+    altText: `Intive`,
+    btnPara: `Learn about Intive`,
+    internalLink: false,
+    link: `https://www.intive.com/`,
 }]

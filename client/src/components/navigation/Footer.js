@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-// fa-youtube
-
 const Footer = () => (
     <div className="footer">
         <div className="footer__icons">

@@ -1,36 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import Hero from '../containers/Hero';
 import OneCol from '../containers/OneCol';
 import CallToAction from '../containers/CallToAction';
-
 import axios from 'axios';
 
-export default class HomePage extends React.Component {
-    state = {
-        TwoColdata: []
-    }
+export default () => {
+    const [twoColData, setData] = useState([]);
 
-    componentWillMount() {
-        let that = this;
-        axios.get(`/projects/projects-two-col-data`)
-            .then(function (response) {
-                that.setState({ TwoColdata: response.data });
-                console.log(that.state.TwoColdata[0].para)
-            })
-            .catch(function (error) {
-                console.log(error);
-            })
-    }
+    useEffect(() => {
+        async function getData() {
+            try {
+                let response = await axios.get(`/projects/projects-two-col-data`);
+                setData(response.data);
+            }
+            catch {
+                console.log('Err');
+            }
+        }
+        getData();
+    },[])
 
-    render() {
-        return (
-            <div>
-                <Hero
+    return (
+        <Fragment>
+            <Hero
                     header="Things I've Built"
                     subHeader="Because talk is cheap"
                     bg="projects-bg"
                 />
-                {this.state.TwoColdata.map((data, i) => {
+                {twoColData.map((data, i) => {
                     return (
                         <OneCol
                             key={i}
@@ -51,7 +48,6 @@ export default class HomePage extends React.Component {
                     ctaPara="I'm ready to dig deep into my arsenal of skills, techniques to help you achieve your goals. Send me a line to get the ball rolling."
                     ctaBtnText="Reach Out"
                 />
-            </div>
-        );
-    }
+        </Fragment>
+    )
 }

@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ScrollToTop from './ScrollToTop';
 import Nav from './components/navigation/Nav';
-import Home from './components/pages/Home';
-import Skills from './components/pages/Skills';
-import WorkHistory from './components/pages/WorkHistory';
-import Education from './components/pages/Education';
-import Projects from './components/pages/Projects';
-import ErrorPage from './components/pages/ErrorPage';
+import Home from './components/pages/Home.jsx';
+import Skills from './components/pages/Skills.jsx';
+import WorkHistory from './components/pages/WorkHistory.jsx';
+import Education from './components/pages/Education.jsx';
+import Projects from './components/pages/Projects.jsx';
+import ErrorPage from './components/pages/ErrorPage.jsx';
 import Contact from './components/pages/Contact';
 import Footer from './components/navigation/Footer';
 import './App.css';
@@ -14,9 +14,8 @@ import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-class App extends Component {
+const App  = () => {
 
-  render() {
     return (
       <div className="App">      
         <Router>
@@ -50,7 +49,7 @@ class App extends Component {
         </Router>
       </div>
     );
-  }
+  
 }
 
 export default App;

@@ -1,46 +1,30 @@
-import React, { Component } from 'react';
-
+import React, { useState, useEffect, Fragment } from 'react';
 import DskTpNav from './DskTpNav';
 import MobileNav from './MobileNav';
 
-class Nav extends Component {
-
-    state = {
-        mobileToggle: false,
-        mobileView: true
-    }
-
-    updateDimensions = () => {
-      if(window.innerWidth > 500) {
-        this.setState({ mobileView: false })
-      } else {
-        this.setState({ mobileView: true})
-      }
-    }
-    
-    handleClick = () => {
-        this.setState(prevState => ({
-            mobileToggle: !prevState.mobileToggle
-        }))
-    }
-
-    componentDidMount() {
-      this.updateDimensions();
-      window.addEventListener("resize", this.updateDimensions)
-    }
-
-
-    render() {
-      return (
-        <div>
-          <DskTpNav toggleBtn={this.handleClick}/>
-          <MobileNav toggleBtn={this.handleClick}
-                     mobileToggle={this.state.mobileToggle} 
-                     mobileView={this.state.mobileView}/>
-        </div>
-      );
-    }
+const Nav = () => {
+  const [mobileToggle, setMobileToggle] = useState(false);
+  const [mobileView, setMobileView] = useState(true);
+  const updateDimensions = () => {
+    window.innerWidth > 500 ? setMobileView(false): setMobileView(true);
+    return;
   }
+  const handleClick = () => {
+    setMobileToggle(!mobileToggle);
+}
+  useEffect(() => {
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions);
+  }, [])
 
+  return (
+    <Fragment>
+      <DskTpNav toggleBtn={handleClick}/>
+          <MobileNav toggleBtn={handleClick}
+                     mobileToggle={mobileToggle} 
+                     mobileView={mobileView}/>
+    </Fragment>
+  )
 
+}
 export default Nav;

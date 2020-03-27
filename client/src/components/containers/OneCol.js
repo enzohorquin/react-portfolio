@@ -1,46 +1,39 @@
 import React from 'react';
 
-class TwoCol extends React.Component {
-    render() {
+export default (props) => {
         return (
-            <div className={`full-width-row ${this.props.bg}`}>
+            <div className={`full-width-row ${props.bg}`}>
                 <div className="row-container two-col-container">
                     <div className="two-col-container__text-container">
-                        <h2 className="h1-header h1-header--blue">{this.props.header}</h2>
+                        <h2 className="h1-header h1-header--blue">{props.header}</h2>
 
                         {
-                            this.props.para &&
-                            this.props.para.map((paraItem, i) => {
+                            props.para &&
+                            props.para.map((paraItem, i) => {
                                 return <p key={i} className="two-col-container__text-container__para para">{paraItem}</p>
                             })
                         }
 
                         {
-                            this.props.listTitle &&
+                            props.listTitle &&
                             <div>
-                                <p className="two-col-container__text-container__para para">{this.props.listTitle}</p>
+                                <p className="two-col-container__text-container__para para">{props.listTitle}</p>
                             </div>
                         }
                         {
-                            this.props.list &&
+                            props.list &&
                             <ul>
-                                {this.props.list.map((listItem, i) => {
+                                {props.list.map((listItem, i) => {
                                     return <li key={i} className="two-col-container__text-container__para para">{listItem}</li>
                                 })}
                             </ul>
                         }
 
-                        
-
-
                     </div>
-                    <div className={`two-col-container__img-container ${this.props.pullImg}`}>
-                        <img className="two-col-container__img-container__img" src={this.props.img} alt={this.props.altText} />
+                    <div className={`two-col-container__img-container ${props.pullImg}`}>
+                        <img className="two-col-container__img-container__img" src={props.img} alt={props.altText} />
                     </div>
                 </div>
             </div>
         );
-    }
 }
-
-export default TwoCol;

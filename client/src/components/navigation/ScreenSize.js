@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
 import windowSize from 'react-window-size';
  
-class ScreenSize extends Component {
- 
-  render() {
-    return (
-        <div>
-        {this.props.windowWidth}
-        </div>
-    );
-  }
- 
+const ScreenSize = ({ windowWidth }) => {
+  return (
+    <Fragment>
+      {windowWidth}
+    </Fragment>
+  )
 }
  
 export default windowSize(ScreenSize);

@@ -14,7 +14,7 @@ module.exports =
                 },
                 {
                     icon: `fab fa-sass`,
-                    text: `SCSS`
+                    text: `SASS`
                 },
                 {
                     icon: `images/logos/javascript.png`,

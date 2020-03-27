@@ -3,11 +3,11 @@ module.exports = [{
     subHeader: `School Final Project for Algorithms Analysis and Design I and Computer Science II`,
     para: [`C++`],
     list: [ `The primary goal is to show real applications that can be solved through Boolean Satisfaction (SAT). We used propositional resolution in the program. To do this, we decided to use an algorithm called "Davis Putnam Logemann Loveland" that allows knowing the satisfaction of a set of clauses. The resolution of problems such as N-Queens and Graph Color was also shown through boolean satisfaction.`   
-    ,` Once the application was finished we wrote a paper: "SAT: Una herramienta didáctica para el problema de la satisfacibilidad" in order to speak at  XLIII Latin American Informatics Conference and the 46th JAIIO `,`Speaker at the EST 2017 - Student Work Contest during the XLIII Latin American Informatics Conference and the 46th JAIIO Having achieved the 2nd place in the respective category.`, `Co-Authors: Tomas Covelli and Martin Santillan Cooper.`],
+    ,` Once the application was finished we wrote a paper: "SAT: Una herramienta didáctica para el problema de la satisfacibilidad" in order to speak at  XLIII Latin American Informatics Conference and the 46th JAIIO `,`Speaker at the EST 2017 - Student Work Contest during the XLIII Latin American Informatics Conference and the 46th JAIIO Having achieved the 2nd place in the respective category.`, `Authors: Tomas Covelli, Enzo Nicolas Horquin and Martin Santillan Cooper.`],
     img: `images/speaker.png`,
     pullImg: 'img-right',
     altText: `SAT`,
-    btnPara: `Read the paper me and my team wrote!`,
+    btnPara: `Read the paper my team and I wrote!`,
     internalLink: false,
     link: `http://www.clei2017-46jaiio.sadio.org.ar/sites/default/files/Mem/EST/est-06.pdf`
 },

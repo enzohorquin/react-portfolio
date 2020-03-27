@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavLink } from 'react-router-dom';
 import logo from "../../images/logo5.png";
 
 
-class DesktopNav extends Component {
-
-  render() {
+const  DesktopNav = () => {
     return (
     <nav className="nav ">
       <ul className="nav__list">
@@ -44,6 +42,4 @@ class DesktopNav extends Component {
       </ul>
     </nav>
   )};
-}
-
-export default DesktopNav;
+  export default DesktopNav;

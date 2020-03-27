@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-class PrimaryFourCol extends React.Component {
-
-    render() {
+export default () => {
         return (
             <div className="full-width-row home-primary-bg">
                 <div className="row-container">
@@ -26,7 +23,6 @@ class PrimaryFourCol extends React.Component {
                             <h3 className="four-col-primary__container__item__header">Other Skills</h3>
                             <p className="four-col-primary__container__item__para">Technologies and Frameworks</p>
                         </div>
-                        
                     </div>
                     <div className="text-center">
                         <Link to="/skills" className="btn btn--blue">My Tool Kit</Link>
@@ -34,8 +30,5 @@ class PrimaryFourCol extends React.Component {
                     
                 </div>
             </div>
-        );
-    }
+        );   
 }
-
-export default PrimaryFourCol;
